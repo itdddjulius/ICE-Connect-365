@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:background="#0d000000" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/meeting_title" />
+    <TableLayout android:id="@id/tableLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+        <TableRow>
+            <TextView android:text="@string/meeting_id" style="@style/meetingdetails_key" />
+            <TextView android:id="@id/meetingId" android:hint="@string/none" android:layout_weight="1.0" style="@style/meetingdetails_value" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/date" style="@style/meetingdetails_key" />
+            <TextView android:id="@id/date" android:layout_weight="1.0" style="@style/meetingdetails_value" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/time" style="@style/meetingdetails_key" />
+            <TextView android:id="@id/time" android:layout_weight="1.0" style="@style/meetingdetails_value" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/organizer" style="@style/meetingdetails_key" />
+            <TextView android:id="@id/organizer" android:layout_weight="1.0" style="@style/meetingdetails_value" />
+        </TableRow>
+    </TableLayout>
+    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff4d4d4d" android:layout_gravity="center_horizontal" android:id="@id/join" android:background="@drawable/button_dialog_join" android:paddingLeft="19.0dip" android:paddingRight="27.0dip" android:layout_width="wrap_content" android:layout_height="87.0dip" android:layout_marginTop="25.0dip" android:text="@string/join" android:drawableLeft="@drawable/meeting_icon_with_bluejeans" android:drawablePadding="19.0dip" />
+</LinearLayout>

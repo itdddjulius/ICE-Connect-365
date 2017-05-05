@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="apiServerIps">
+        <item>https://relay.bluejeans.com/api/</item>
+        <item></item>
+    </string-array>
+    <string-array name="apiServerNames">
+        <item>Production</item>
+        <item>Manually Configured</item>
+    </string-array>
+    <string-array name="roboguice_modules">
+        <item>vc.bjn.catalyst.ice.common.ApplicationContext</item>
+    </string-array>
+</resources>

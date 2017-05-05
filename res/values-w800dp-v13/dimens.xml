@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inmeeting_separator_width">480.0dip</dimen>
+    <dimen name="inmeeting_separator_marginTop">150.0dip</dimen>
+    <dimen name="inmeeting_buttons_marginTop">80.0dip</dimen>
+    <dimen name="inmeeting_button_width">240.0dip</dimen>
+    <dimen name="inmeeting_button_height">190.0dip</dimen>
+    <dimen name="inmeeting_button_paddingBottom">34.0dip</dimen>
+    <dimen name="inmeeting_button_paddingTop">38.0dip</dimen>
+    <dimen name="inmeeting_button_textSize">28.0sp</dimen>
+    <dimen name="inmeeting_button_marginBetween">60.0dip</dimen>
+    <dimen name="inmeeting_title_textSize">32.0sp</dimen>
+</resources>

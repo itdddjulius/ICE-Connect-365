@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferences">
+        <ListPreference android:title="@string/endpoint_id" android:key="endpointId" />
+        <EditTextPreference android:title="@string/username_storm" android:key="stormUsername" />
+        <EditTextPreference android:title="@string/password_storm" android:key="stormPassword" android:inputType="textPassword" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced" android:key="advanced">
+        <EditTextPreference android:title="@string/settings_password" android:key="settingsPassword" android:dialogTitle="@string/settings_password" android:dialogMessage="@string/set_password_hint" android:positiveButtonText="@string/set_password" android:inputType="textVisiblePassword" />
+        <CheckBoxPreference android:title="@string/keepInForeground" android:key="keepInForeground" />
+        <ListPreference android:entries="@array/apiServerNames" android:title="@string/api_root" android:key="assmanApiRoot" android:entryValues="@array/apiServerIps" />
+        <EditTextPreference android:title="@string/manual_api_root" android:key="manualApiRoot" />
+    </PreferenceCategory>
+</PreferenceScreen>

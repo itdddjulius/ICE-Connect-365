@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#17000000</color>
+    <color name="dark_gray">#99000000</color>
+    <color name="separator_gray">#66000000</color>
+    <color name="blue_bright">#ff40a3ff</color>
+    <color name="red">#ff810007</color>
+    <color name="form_label">#ff545454</color>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullscreenNoTitle" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+    <style name="meetingid_label" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="fragment_title" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textSize">@dimen/magic</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="meeting_title" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="meetingdetails_key" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="meetingdetails_value" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#88000000</item>
+        <item name="android:textColorHint">#40000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="meetingIcon">
+        <item name="android:paddingLeft">36.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">36.0dip</item>
+    </style>
+    <style name="Theme.MyTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:backgroundDimAmount">0.67</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="formLabel" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/form_label</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="endpointEditorTableRow">
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="formEditText" parent="@android:style/Widget.Holo.Light.EditText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+    </style>
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue_bright</item>
+    </style>
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabView.Inverse">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+    <style name="inmeetingButton" parent="@android:style/Widget.Holo.Button">
+        <item name="android:textSize">@dimen/inmeeting_button_textSize</item>
+        <item name="android:textColor">@color/always_white</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingTop">@dimen/inmeeting_button_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/inmeeting_button_paddingBottom</item>
+    </style>
+</resources>

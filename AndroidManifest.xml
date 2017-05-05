@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vc.bjn.catalyst.ice" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <permission android:name="vc.bjn.resources.READ" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="vc.bjn.resources.READ"/>
+    <supports-screens android:largeScreens="true" android:xlargeScreens="true"/>
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/ice_icon" android:label="@string/app_name" android:theme="@style/CustomActionBarTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ui.activity.LauncherActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".ui.activity.ScheduledMeetingListActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="bluejeans.com"/>
+                <data android:pathPrefix="/0"/>
+                <data android:pathPrefix="/1"/>
+                <data android:pathPrefix="/2"/>
+                <data android:pathPrefix="/3"/>
+                <data android:pathPrefix="/4"/>
+                <data android:pathPrefix="/5"/>
+                <data android:pathPrefix="/6"/>
+                <data android:pathPrefix="/7"/>
+                <data android:pathPrefix="/8"/>
+                <data android:pathPrefix="/9"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bjn"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/preferences" android:name=".ui.activity.PreferencesActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:name=".ui.activity.NoConnectivityActivity" android:theme="@style/Theme.MyTranslucent"/>
+        <activity android:name=".ui.activity.InmeetingActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.activity.HowToActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ui.activity.LoginWizardActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name=".ui.activity.NoListenerServicesWizardActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/choose_endpoint" android:name=".ui.activity.EndpointWizardActivity" android:theme="@style/CustomActionBarTheme"/>
+        <activity android:label="@string/test_call" android:name=".ui.activity.TestCallActivity" android:theme="@style/CustomActionBarTheme"/>
+        <receiver android:enabled="true" android:exported="true" android:name=".service.impl.ForegroundReceiver">
+            <intent-filter>
+                <action android:name="vc.bjn.catalyst.ice.ACTION_BRING_TO_FOREGROUND"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

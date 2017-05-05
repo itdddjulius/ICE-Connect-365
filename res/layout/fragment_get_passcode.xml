@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/getPasscode" android:layout_width="80.0dip" android:layout_height="wrap_content" android:digits="0123456789" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:inputType="phone|textNoSuggestions" />
+</RelativeLayout>

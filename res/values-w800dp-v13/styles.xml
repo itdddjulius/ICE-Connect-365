@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullscreenNoTitle" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+    <style name="meetingid_label" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="fragment_title" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textSize">@dimen/magic</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="meeting_title" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="meetingdetails_key" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">34.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="meetingdetails_value" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#88000000</item>
+        <item name="android:textColorHint">#40000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="meetingIcon">
+        <item name="android:paddingLeft">36.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">36.0dip</item>
+    </style>
+    <style name="Theme.MyTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:backgroundDimAmount">0.67</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>
